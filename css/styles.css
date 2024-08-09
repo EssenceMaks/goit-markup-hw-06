@@ -21,7 +21,7 @@
     box-sizing: border-box;
 }
 
-/* #region Base styles */
+/* ________________________________________________ Base styles ________________________ */
 body {
     font-family: var(--primary-font);
     color: var(--slate);
@@ -173,9 +173,10 @@ img {
 .social-media-link:focus {
     background-color: var(--ocean);
 }
-/* #endregion */
+/* ________________________________________________ End Base styles ________________________ */
 
-/* #region Navigation */
+/* ________________________________________________ Navigation _____________________________ */
+
 .header {
     border-bottom: 1px solid var(--cornflower);
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -288,9 +289,12 @@ img {
 .contact-info-link:focus {
     color: var(--ocean);
 }
-/* #endregion */
+/* ________________________________________________ End Navigation _____________________________ */
 
-/* #region Section Hero */
+
+
+/* __________________________________________________ Section Hero _____________________________ */
+
 .hero-section {
     padding: 188px 0;
     margin: 0 auto;
@@ -343,9 +347,11 @@ img {
 .order-button:focus {
     background-color: var(--ocean);
 }
-/* #endregion */
+/* ________________________________________________ End Section Hero _____________________________ */
 
-/* #region About */
+
+/* ___________________________________________________________ About _____________________________ */
+
 .about-details-item {
     display: flex;
     width: calc((100% - 24px * 3) / 4);
@@ -466,9 +472,11 @@ img {
 .portfolio-card-item:hover .portfolio-overlay {
     transform: translateY(0);
 }
-/* #endregion */
+/* ________________________________________________ End About _____________________________ */
 
-/* #region Footer */
+
+/* ___________________________________________________ Footer _____________________________ */
+
 .footer {
     background-color: var(--navy-blue);
     padding: 100px 0;
@@ -496,8 +504,6 @@ img {
     letter-spacing: 0.02em;
     color: var(--cloud);
 }
-
-
 
 .footer-social-media {
     width: auto;
@@ -572,9 +578,11 @@ img {
     margin-left: 16px;
     fill: var(--white);
 }
-/* #endregion */
+/* ________________________________________________ End Footer _____________________________ */
 
-/* #region Modal window */
+
+/* ______________________________________________ Modal window _____________________________ */
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -792,7 +800,11 @@ input[type="checkbox"]:checked + .modal-form-description > .modal-form-checkbox 
 .modal-btn {
     margin: 0 auto;
 }
-___________________________________________ M E N U ___________________
+
+/* ________________________________________________ End Modal window _____________________________ */
+
+
+/* ____________________________________________________ M E N U __________________________________ */
 .menu-btn {
     display: flex;
     justify-content: center;
@@ -886,4 +898,5 @@ ___________________________________________ M E N U ___________________
     width: 40px;
     height: 40px;
 }
-_________________________________________ End M E N U ____________________
+
+/* ________________________________________________ End M E N U __________________________________ */
