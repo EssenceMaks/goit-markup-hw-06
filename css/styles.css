@@ -477,6 +477,7 @@ img {
 .footer-wrapper {
     display: flex;
     align-items: baseline;
+    text-align: left;
 }
 
 .footer-logo-wrapper {
