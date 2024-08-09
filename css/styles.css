@@ -792,4 +792,98 @@ input[type="checkbox"]:checked + .modal-form-description > .modal-form-checkbox 
 .modal-btn {
     margin: 0 auto;
 }
-/* #endregion */
+___________________________________________ M E N U ___________________
+.menu-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .menu-btn {
+        display: none;
+    }
+}
+
+.mobile-menu {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    inset: 0;
+    z-index: 100;
+    padding: 72px 16px 40px;
+    background-color: var(--white);
+    transform: translateX(100%);
+    visibility: hidden;
+    transition: var(--animation);
+    transition-property: transform, visibility;
+}
+
+.mobile-menu.is-open {
+    transform: translateX(0);
+    visibility: visible;
+}
+
+.menu-close-btn {
+    background-color: transparent;
+    border-color: var(--navy-blue);
+}
+
+.mobile-menu-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: auto;
+}
+
+.mobile-menu-link {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: var(--navy-blue);
+}
+
+.mobile-menu-link.active {
+    color: var(--ocean);
+}
+
+.mobile-menu-contacts {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.mobile-contacts-link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--slate);
+}
+
+.accent {
+    color: var(--iris);
+}
+
+.mobile-menu-socials {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.mobile-menu-social-link {
+    width: 40px;
+    height: 40px;
+}
+_________________________________________ End M E N U ____________________
