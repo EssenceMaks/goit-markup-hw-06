@@ -771,11 +771,12 @@ img {
 
 /* ___________________________________________________ Footer _____________________________ */
 
+
 .footer {
     background-color: var(--navy-blue);
 }
 
-.footer-wrapper {
+.footer-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -783,49 +784,51 @@ img {
     gap: 72px;
     padding: 96px 16px;
 }
-        @media only screen and (min-width: 768px) {
-            .footer-container {
-                justify-content: flex-start;
-                flex-direction: row;
-                flex-wrap: wrap;
-                column-gap: 24px;
-                padding-left: 108px;
-                padding-right: 0;
-                align-items: baseline;
-            }
-        }
-        
-        @media only screen and (min-width: 1158px) {
-            .footer-container {
-                justify-content: center;
-                flex-wrap: nowrap;
-                gap: 0;
-                padding: 100px 0;
-            }
-        }
 
+@media only screen and (min-width: 768px) {
+    .footer-container {
+        justify-content: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        padding-left: 108px;
+        padding-right: 0;
+        align-items: baseline;
+    }
+}
 
-.footer-logo-wrapper {
+@media only screen and (min-width: 1158px) {
+    .footer-container {
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 0;
+        padding: 100px 0;
+    }
+}
+
+.footer-logo {
     text-align: center;
 }
-        @media only screen and (min-width: 768px) {
-            .footer-logo {
-                text-align: left;
-            }
-        }
-        @media only screen and (min-width: 1158px) {
-            .footer-logo {
-                margin-right: 120px;
-            }
-        }
 
-.footer-logo-wrapper .logo-main {
+@media only screen and (min-width: 768px) {
+    .footer-logo {
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+    .footer-logo {
+        margin-right: 120px;
+    }
+}
+
+.footer-logo .logo {
     display: inline-block;
     margin: 0 auto 16px;
     padding: 0;
 }
 
-.footer-description {
+.footer-txt {
     text-align: left;
     width: 264px;
     line-height: 1.5;
@@ -833,7 +836,7 @@ img {
     color: var(--cloud);
 }
 
-.footer-social-media {
+.footer-heading {
     width: 100%;
     font-weight: 500;
     line-height: 1.5;
@@ -842,18 +845,20 @@ img {
     color: var(--white);
     margin-bottom: 16px;
 }
-        @media only screen and (min-width: 768px) {
-            .footer-social-media {
-                text-align: left;
-            }
-        }
-        @media only screen and (min-width: 1158px) {
-            .footer-info {
-                margin-right: 80px;
-            }
-        }
 
-.footer-social-list {
+@media only screen and (min-width: 768px) {
+    .footer-heading {
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+    .footer-social-media {
+        margin-right: 80px;
+    }
+}
+
+.footer-socials {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -861,28 +866,28 @@ img {
     gap: 16px;
 }
 
-.footer-social-item {
+.footer-social-link {
     width: 40px;
     height: 40px;
 }
 
-.footer-social-item .social-media-link:hover,
-.footer-social-item .social-media-link:focus {
+.footer-social-link .social-link:hover,
+.footer-social-link .social-link:focus {
     background-color: var(--green);
 }
-
 
 .subscribe-form {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
-        @media only screen and (min-width: 768px) {
-            .subscribe-form {
-                flex-direction: row;
-                gap: 24px;
-            }
-        }
+
+@media only screen and (min-width: 768px) {
+    .subscribe-form {
+        flex-direction: row;
+        gap: 24px;
+    }
+}
 
 .subscribe-input {
     display: block;
@@ -919,6 +924,8 @@ img {
     margin-left: 16px;
     fill: var(--white);
 }
+
+
 /* ________________________________________________ End Footer _____________________________ */
 
 
