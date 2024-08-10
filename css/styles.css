@@ -600,6 +600,7 @@ team-list-wrapper {
         
         @media only screen and (min-width: 1158px) {
             team-list-wrapper {
+                justify-content: center;
                 gap: 24px;
             }
         }
@@ -721,12 +722,16 @@ team-list-wrapper {
 
 
 .portfolio-card-item .portfolio-card-description {
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
+    gap: 8px;
+    line-height: 0;
     padding: 32px 16px;
     border-bottom: 1px solid var(--cornflower);
     border-left: 1px solid var(--cornflower);
     border-right: 1px solid var(--cornflower);
-    line-height: normal;
 }
 
 .portfolio-card-description h3 {
