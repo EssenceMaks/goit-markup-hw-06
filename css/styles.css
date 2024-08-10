@@ -656,8 +656,8 @@ team-list-wrapper {
 .portfolio-list-wrapper {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
+    justify-content: center;
+    
     gap: 48px;
 }
         @media only screen and (min-width: 768px) {
@@ -685,12 +685,12 @@ team-list-wrapper {
 }
         @media only screen and (min-width: 768px) {
             .portfolio-card-item {
-                width: calc((100% - 24px) / 2);
+                width: calc(40% - 0px);
             }
         }
         @media only screen and (min-width: 1158px) {
             .portfolio-card-item {
-                width: calc((100% - 24px * 2) / 3);
+                width: calc(25% - 12px);
             }
         }
 
@@ -736,9 +736,11 @@ team-list-wrapper {
 
 .portfolio-card-description h3 {
     margin: 5px 0px;
+    text-align: center;
 }
 .portfolio-card-description p {
     margin: 5px 0px;
+    text-align: center;
 }
 
 
