@@ -651,9 +651,9 @@ team-list-wrapper {
 
 .portfolio-list-wrapper {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-    
+
     gap: 48px;
 }
         @media only screen and (min-width: 768px) {
