@@ -772,26 +772,60 @@ img {
 
 .footer {
     background-color: var(--navy-blue);
-    padding: 100px 0;
 }
 
 .footer-wrapper {
     display: flex;
-    align-items: baseline;
-    text-align: left;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 72px;
+    padding: 96px 16px;
 }
+        @media only screen and (min-width: 768px) {
+            .footer-container {
+                justify-content: flex-start;
+                flex-direction: row;
+                flex-wrap: wrap;
+                column-gap: 24px;
+                padding-left: 108px;
+                padding-right: 0;
+                align-items: baseline;
+            }
+        }
+        
+        @media only screen and (min-width: 1158px) {
+            .footer-container {
+                justify-content: center;
+                flex-wrap: nowrap;
+                gap: 0;
+                padding: 100px 0;
+            }
+        }
+
 
 .footer-logo-wrapper {
-    margin-right: 120px
+    text-align: center;
 }
+        @media only screen and (min-width: 768px) {
+            .footer-logo {
+                text-align: left;
+            }
+        }
+        @media only screen and (min-width: 1158px) {
+            .footer-logo {
+                margin-right: 120px;
+            }
+        }
 
 .footer-logo-wrapper .logo-main {
     display: inline-block;
-    margin-bottom: 16px;
-    margin-right: 0;
+    margin: 0 auto 16px;
+    padding: 0;
 }
 
 .footer-description {
+    text-align: left;
     width: 264px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -799,18 +833,24 @@ img {
 }
 
 .footer-social-media {
-    width: auto;
+    width: 100%;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    text-align: center;
     color: var(--white);
     margin-bottom: 16px;
-    margin-right: 0;
 }
-
-.footer-info {
-    margin-right: 80px;
-}
+        @media only screen and (min-width: 768px) {
+            .footer-social-media {
+                text-align: left;
+            }
+        }
+        @media only screen and (min-width: 1158px) {
+            .footer-info {
+                margin-right: 80px;
+            }
+        }
 
 .footer-social-list {
     display: flex;
@@ -833,8 +873,15 @@ img {
 
 .subscribe-form {
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    gap: 16px;
 }
+        @media only screen and (min-width: 768px) {
+            .subscribe-form {
+                flex-direction: row;
+                gap: 24px;
+            }
+        }
 
 .subscribe-input {
     display: block;
