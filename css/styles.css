@@ -532,7 +532,7 @@ img {
     margin-bottom: 8px
 }
         @media only screen and (max-width: 1157px) {
-            .about-icon {
+            .about-icon-wrapper {
                 display: none;
             }
         }
