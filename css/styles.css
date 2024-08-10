@@ -580,11 +580,6 @@ img {
     background-color: var(--cloud);
 }
 
-.team-list-wrapper {
-    display: flex;
-    flex-direction: column;
-}
-
 
 team-list-wrapper {
     display: flex;
