@@ -600,6 +600,50 @@
     </ul>
 </div>
 <!-- end mob menu -->
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    // Мобільне меню
+    const menuBtn = document.querySelector('.menu-btn'); // Кнопка открытия меню
+    const closeMenuBtn = document.querySelector('.menu-close-btn'); // Кнопка закрытия меню
+    const mobileMenu = document.querySelector('.mobile-menu'); // Мобильное меню
+
+    menuBtn.addEventListener('click', function () {
+        mobileMenu.classList.add('is-open');
+    });
+
+    closeMenuBtn.addEventListener('click', function () {
+        mobileMenu.classList.remove('is-open');
+    });
+
+    mobileMenu.addEventListener('click', function (event) {
+        if (event.target === mobileMenu) {
+            mobileMenu.classList.remove('is-open');
+        }
+    });
+
+    // Модальне вікно
+    const openModalBtn = document.querySelector('.btn'); // Кнопка "Order Service"
+    const closeModalBtn = document.querySelector('.modal-close-btn'); // Кнопка закрытия модального окна
+    const backdrop = document.querySelector('.backdrop'); // Фон модального окна
+
+    openModalBtn.addEventListener('click', function () {
+        backdrop.classList.add('is-open');
+    });
+
+    closeModalBtn.addEventListener('click', function () {
+        backdrop.classList.remove('is-open');
+    });
+
+    backdrop.addEventListener('click', function (event) {
+        if (event.target === backdrop) {
+            backdrop.classList.remove('is-open');
+        }
+    });
+});
+</script>
+
     
 </body>
 
