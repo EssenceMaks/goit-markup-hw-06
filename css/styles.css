@@ -485,13 +485,40 @@ img {
 
 /* ___________________________________________________________ About _____________________________ */
 
+.about-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 72px;
+}
+        @media only screen and (min-width: 768px) {
+          .about-list {
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            column-gap: 24px;
+          }
+        }
+
+
 .about-details-item {
     display: flex;
-    width: calc((100% - 24px * 3) / 4);
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
 }
+        @media only screen and (min-width: 768px) {
+          .about-details-item {
+            width: calc((100% - 24px * 2) / 2);
+          }
+        }
+        
+        @media only screen and (min-width: 1158px) {
+          .about-details-item {
+            width: calc((100% - 24px * 3) / 4);
+          }
+        }
 
 .about-icon-wrapper {
     display: flex;
@@ -504,9 +531,51 @@ img {
     background-color: var(--cloud);
     margin-bottom: 8px
 }
-/* #endregion */
+        @media only screen and (max-width: 1157px) {
+            .about-icon {
+                display: none;
+            }
+        }
 
-/* #region Section Team */
+.about-item-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--navy-blue);
+}
+        @media only screen and (min-width: 768px) {
+            .about-item-title {
+                text-align: left;
+            }
+        }
+        @media only screen and (min-width: 1158px) {
+            .about-item-title {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 1.2;
+            }
+        }
+
+.about-item-txt {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: inherit;
+}
+        @media only screen and (min-width: 1158px) {
+            .about-item-txt {
+                font-weight: 400;
+            }
+        }
+
+/* ___________________________________________________________End About _____________________________ */
+
+
+/* ___________________________________________________________ Section Team  _____________________________ */
+
 .team-section {
     background-color: var(--cloud);
 }
@@ -605,6 +674,8 @@ img {
 .portfolio-card-item:hover .portfolio-overlay {
     transform: translateY(0);
 }
+
+/* ___________________________________________________________End Section Team  _____________________________ */
 /* ________________________________________________ End About _____________________________ */
 
 
