@@ -117,12 +117,7 @@ img {
 }
 
 
-
-
-
-.about-details-list,
-.team-list-wrapper,
-.portfolio-list-wrapper {
+.team-list-wrapper {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
@@ -704,21 +699,7 @@ team-list-wrapper {
 }
 
 
-.portfolio-card-item-img {
-    width: 288px;
-    height: 280px;
-}
-        @media only screen and (min-width: 768px) {
-            .portfolio-card-item-img {
-                width: 356px;
-                height: 300px;
-            }
-        }    
-        @media only screen and (min-width: 1158px) {
-            .portfolio-card-item-img {
-                width: 360px;
-            }
-        }
+
 
 
 .portfolio-card-item .portfolio-card-description {
@@ -749,7 +730,23 @@ team-list-wrapper {
     overflow: hidden;
 }
 
-.portfolio-overlay {
+.portfolio-card-content picture {
+    width: 288px;
+    height: 280px;
+}
+        @media only screen and (min-width: 768px) {
+            .portfolio-card-content picture {
+                width: 356px;
+                height: 300px;
+            }
+        }    
+        @media only screen and (min-width: 1158px) {
+            .portfolio-card-content picture {
+                width: 360px;
+            }
+        }
+
+.portfolio-card-content overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -766,7 +763,7 @@ team-list-wrapper {
     transition-property: transform;
 }
 
-.portfolio-card-item:hover .portfolio-overlay {
+.portfolio-card-item:hover .portfolio-card-content overlay {
     transform: translateY(0);
 }
 
