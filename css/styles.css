@@ -118,11 +118,7 @@ img {
 }
 
 
-.team-list-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-}
+
 
 .about-subheading {
     margin-bottom: 72px;
@@ -577,7 +573,7 @@ img {
 }
 
 
-team-list-wrapper {
+.team-list-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -585,7 +581,7 @@ team-list-wrapper {
 }
 
         @media only screen and (min-width: 768px) {
-            team-list-wrapper {
+            .team-list-wrapper {
                 justify-content: center;
                 flex-direction: row;
                 flex-wrap: wrap;
@@ -595,7 +591,7 @@ team-list-wrapper {
         }
         
         @media only screen and (min-width: 1158px) {
-            team-list-wrapper {
+            .team-list-wrapper {
                 justify-content: center;
                 gap: 24px;
             }
