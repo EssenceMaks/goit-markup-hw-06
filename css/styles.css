@@ -1242,6 +1242,7 @@ input[type="checkbox"]:checked + .modal-form-description > .modal-form-checkbox 
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: row;
+    justify-content: center;
     gap: 40px;
 }
 
