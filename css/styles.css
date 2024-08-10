@@ -747,7 +747,7 @@ team-list-wrapper {
             }
         }
 
-.portfolio-card-content overlay {
+ overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -764,7 +764,7 @@ team-list-wrapper {
     transition-property: transform;
 }
 
-.portfolio-card-item:hover .portfolio-card-content overlay {
+.portfolio-card-item:hover  overlay {
     transform: translateY(0);
 }
 
