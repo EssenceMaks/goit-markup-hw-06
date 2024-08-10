@@ -161,6 +161,9 @@ img {
     text-align: center;
 }
 
+
+
+/* ________________________________________________ need or not ________________________ */
 .portfolio-card-description,
 .team-member-card-content {
     display: flex;
@@ -170,6 +173,9 @@ img {
     line-height: 0;
     padding: 32px 0;
 }
+/* ________________________________________________ need or not ________________________ */
+
+
 
 .visually-hidden {
     position: absolute;
@@ -225,7 +231,15 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
+        width: 100%;
 }
+
+        @media only screen and (min-width: 768px) {
+            .navigation {
+                justify-content: unset;
+                width: auto;
+            }
+        }
 
 .navigation-list {
     display: flex;
@@ -234,6 +248,11 @@ img {
     flex-direction: row;
     gap: 40px;
 }
+        @media only screen and (max-width: 767px) {
+          .navigation-list {
+            display: none;
+          }
+        }
 
 .navigation-link {
     position: relative;
@@ -267,9 +286,10 @@ img {
     background-color: var(--ocean);
 }
 
-/* #endregion */
+/* ________________________________________________ End Navigation _____________________________ */
 
-/* #region Logo */
+/* ________________________________________________ Logo _______________________________________ */
+
 .logo-main {
     font-family: var(--logo-font);
     font-weight: 700;
@@ -280,6 +300,16 @@ img {
     color: var(--iris);
     margin-right: 76px;
 }
+        @media only screen and (min-width: 768px) {
+            .logo-main {
+                margin-right: 120px;
+            }
+        }
+        @media only screen and (min-width: 1158px) {
+            .logo-main {
+                margin-right: 76px;
+            }
+        }
 
 .logo-main:hover, .logo-main:focus {
     color: var(--iris);
@@ -292,25 +322,44 @@ img {
 .footer-logo-highlight {
     color: var(--cloud);
 }
-/* #endregion */
 
-/* #region Address */
+
+
+/* ________________________________________________ End Logo _______________________________________ */
+
+/* ________________________________________________ Address _______________________________________ */
+
 .contact-info {
     font-style: normal;
 }
+        @media only screen and (max-width: 767px) {
+            .contact-info {
+                display: none;
+            }
+        }
+
 
 .contact-info-list {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: row;
-    gap: 40px;
+    flex-direction: column;
+    gap: 12px;
 }
 
-.contact-info-link {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+@media only screen and (min-width: 1158px) {
+    .contact-info-list {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 40px;
+    }
+}
+
+.contact-info-list {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
     color: inherit;
     transition: var(--animation);
     transition-property: color;
@@ -319,6 +368,17 @@ img {
 .contact-info-link:hover,
 .contact-info-link:focus {
     color: var(--ocean);
+}
+
+@media only screen and (min-width: 1158px) {
+    .contact-info-list {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: inherit;
+        transition: var(--animation);
+        transition-property: color;
+    }
 }
 /* ________________________________________________ End Navigation _____________________________ */
 
