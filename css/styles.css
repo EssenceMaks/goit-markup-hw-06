@@ -282,6 +282,7 @@ img {
 /* ________________________________________________ Logo _______________________________________ */
 
 .logo-main {
+    display: inline-block;
     font-family: var(--logo-font);
     font-weight: 700;
     font-size: 18px;
@@ -775,9 +776,10 @@ img {
 
 .footer {
     background-color: var(--navy-blue);
+    padding: 100px 0;
 }
 
-.footer-container {
+.footer-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -787,7 +789,7 @@ img {
 }
 
 @media only screen and (min-width: 768px) {
-    .footer-container {
+    .footer-wrapper {
         justify-content: flex-start;
         flex-direction: row;
         flex-wrap: wrap;
@@ -799,7 +801,7 @@ img {
 }
 
 @media only screen and (min-width: 1158px) {
-    .footer-container {
+    .footer-wrapper {
         justify-content: center;
         flex-wrap: nowrap;
         gap: 0;
@@ -807,29 +809,29 @@ img {
     }
 }
 
-.footer-logo {
+.footer-logo-wrapper {
     text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
-    .footer-logo {
+    .footer-logo-wrapper {
         text-align: left;
     }
 }
 
 @media only screen and (min-width: 1158px) {
-    .footer-logo {
+    .footer-logo-wrapper {
         margin-right: 120px;
     }
 }
 
-.footer-logo .logo {
+.footer-logo-wrapper .logo-main {
     display: inline-block;
     margin: 0 auto 16px;
     padding: 0;
 }
 
-.footer-txt {
+.footer-description {
     text-align: left;
     width: 264px;
     line-height: 1.5;
@@ -837,7 +839,7 @@ img {
     color: var(--cloud);
 }
 
-.footer-heading {
+.footer-social-media {
     width: 100%;
     font-weight: 500;
     line-height: 1.5;
@@ -848,18 +850,18 @@ img {
 }
 
 @media only screen and (min-width: 768px) {
-    .footer-heading {
+    .footer-social-media {
         text-align: left;
     }
 }
 
 @media only screen and (min-width: 1158px) {
-    .footer-social-media {
+    .footer-info {
         margin-right: 80px;
     }
 }
 
-.footer-socials {
+.footer-social-list {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -867,13 +869,13 @@ img {
     gap: 16px;
 }
 
-.footer-social-link {
+.footer-social-item {
     width: 40px;
     height: 40px;
 }
 
-.footer-social-link .social-link:hover,
-.footer-social-link .social-link:focus {
+.footer-social-item .social-media-link:hover,
+.footer-social-item .social-media-link:focus {
     background-color: var(--green);
 }
 
@@ -925,6 +927,7 @@ img {
     margin-left: 16px;
     fill: var(--white);
 }
+
 
 
 /* ________________________________________________ End Footer _____________________________ */
